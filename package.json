@@ -4,6 +4,9 @@
   "private": true,
   "scripts": {
     "start": "per-env",
+    "db:create": "dotenv sequelize-cli db:create",
+    "db:migrate": "dotenv sequelize-cli db:migrate",
+    "db:seed:all": "dotenv sequelize-cli db:seed:all",
     "start:development": "dotenv nodemon ./bin/www",
     "start:production": "dotenv ./bin/www"
   },

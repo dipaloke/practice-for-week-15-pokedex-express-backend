@@ -15,7 +15,7 @@ module.exports = (sequelize, DataTypes) => {
     }
   };
   Pokemon.init({
-    no: {
+    number: {
       allowNull: false,
       type: DataTypes.INTEGER,
       unique: true,

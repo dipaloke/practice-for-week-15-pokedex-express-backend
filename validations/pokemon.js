@@ -6,7 +6,7 @@ const id = check('id')
   .notEmpty()
   .withMessage('cannot be empty')
   .isInt({ min: 0 });
-const no = check('no')
+const number = check('number')
   .notEmpty()
   .withMessage('cannot be empty')
   .isInt({ min: 0 });
@@ -34,7 +34,7 @@ const type = check('type')
 const moves = check('moves').isArray();
 
 exports.validateCreate = [
-  no,
+  number,
   attack,
   defense,
   imageUrl,
@@ -46,7 +46,7 @@ exports.validateCreate = [
 
 exports.validateUpdate = [
   id,
-  no,
+  number,
   attack,
   defense,
   imageUrl,

@@ -52,7 +52,7 @@ app.use((err, _req, _res, next) => {
     err.errors.forEach((e) => {
       errorMessages[e.path] = 
         // If field appears as first word in error message, strip it out
-        e.message.replace(/^no|^attack|^defense|^imageUrl|^name|^type|^moves/, "");
+        e.message.replace(/^number|^attack|^defense|^imageUrl|^name|^type|^moves/, "");
     });
     err.errors = errorMessages;
     err.title = 'Validation Error';

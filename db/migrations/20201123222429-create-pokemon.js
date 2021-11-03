@@ -11,7 +11,7 @@ module.exports = {
         primaryKey: true,
         type: Sequelize.INTEGER
       },
-      no: {
+      number: {
         allowNull: false,
         type: Sequelize.INTEGER,
         unique: true,

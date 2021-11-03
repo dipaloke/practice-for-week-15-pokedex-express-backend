@@ -70,7 +70,7 @@ Successful response looks like this with more entries:
 [
   {
     "id": 1,
-    "no": 1,
+    "number": 1,
     "name": "Bulbasaur",
     "imageUrl": "/images/pokemon_snaps/1.svg",
     "captured": true
@@ -90,7 +90,7 @@ Successful response looks like this for the given id:
 {
   "imageUrl": "/images/pokemon_snaps/1.svg",
   "id": 1,
-  "no": 1,
+  "number": 1,
   "attack": 49,
   "defense": 49,
   "name": "Bulbasaur",
@@ -113,7 +113,7 @@ The payload that you must send looks like this:
 
 ```json
 {
-  "no": 11,
+  "number": 11,
   "attack": 25,
   "defense": 55,
   "imageUrl": "/images/pokemon_snaps/11.svg",
@@ -132,7 +132,7 @@ this:
 ```json
 {
   "id": 126,
-  "no": 11,
+  "number": 11,
   "attack": 25,
   "defense": 55,
   "imageUrl": "/images/pokemon_snaps/11.svg",
@@ -154,7 +154,7 @@ The payload that you must send looks like this:
 ```json
 {
   "id": 126,
-  "no": 11,
+  "number": 11,
   "attack": 25,
   "defense": 55,
   "imageUrl": "/images/pokemon_snaps/11.svg",
@@ -172,7 +172,7 @@ Successful response is the updated Pokemon returned and looks like this:
 ```json
 {
   "id": 126,
-  "no": 11,
+  "number": 11,
   "attack": 25,
   "defense": 55,
   "imageUrl": "/images/pokemon_snaps/11.svg",
@@ -185,7 +185,7 @@ Successful response is the updated Pokemon returned and looks like this:
 }
 ```
 
-### Get a Pokemon's Items: GET /api/pokemon/:id/items
+### Get a Pokemon's Items: GET /api/pokemon/:pokemonId/items
 
 This route returns all the items as an array for the Pokemon matching the id in
 the route parameter.
@@ -235,7 +235,7 @@ Successful response is the updated item returned, which looks like this:
 }
 ```
 
-### Create an Item: POST /api/:id/items/
+### Create an Item: POST /api/pokemon/:pokemonId/items
 
 This route accepts information to create a new item for the pokemon matching the
 pokemon id in the route parameter.
@@ -266,7 +266,7 @@ Successful response is the newly created item returned, which looks like this:
 }
 ```
 
-### Delete an Item: DELETE /api/:id
+### Delete an Item: DELETE /api/items/:id
 
 This route deletes the item matching the id in the route parameter.
 
