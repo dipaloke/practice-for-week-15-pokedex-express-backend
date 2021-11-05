@@ -17,8 +17,8 @@ router.put(
 );
 
 router.delete("/:id", asyncHandler(async function (req, res) {
-  const itemId = await ItemsRepository.deleteItem(req.params.id);
-  return res.json({ itemId });
+  const id = await ItemsRepository.deleteItem(req.params.id);
+  return res.json({ id });
 }));
 
 module.exports = router;

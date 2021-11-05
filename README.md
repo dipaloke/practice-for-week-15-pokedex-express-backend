@@ -231,7 +231,8 @@ Successful response is the updated item returned, which looks like this:
   "happiness": 86,
   "imageUrl": "/images/pokemon_potion.svg",
   "name": "Awesome Plastic Pizza",
-  "price": 27
+  "price": 27,
+  "pokemonId": 1
 }
 ```
 
@@ -262,7 +263,8 @@ Successful response is the newly created item returned, which looks like this:
   "happiness": 86,
   "imageUrl": "/images/pokemon_potion.svg",
   "name": "Awesome Plastic Pizza",
-  "price": 27
+  "price": 27,
+  "pokemonId": 1
 }
 ```
 
